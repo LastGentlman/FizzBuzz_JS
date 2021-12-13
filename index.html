@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name='author' content="Rodry">
+    </head>
+    <style>
+        *{text-align: center;}
+    </style>
+    <body>
+        <h1>FizzBuzz JavaScript Exercice</h1>
+
+        <script>
+            const input = parseInt(prompt('Digit your nubmer to FizzBuzz:'));
+            let output = document.getElementById('output');
+
+                for (let i = 1; i <= input; i++) {
+                    if (i % 3 === 0 && i % 5 === 0) {
+                        document.write('FizzBuzz' + ' ');
+                        console.log('FizzBuzz');
+                    } else if (i % 5 === 0) {
+                        document.write('Buzz' + ' ');
+                        console.log('Buzz');
+                    } else if (i % 3 === 0) {
+                        document.write('Fizz' + ' ');
+                        console.log('Fizz');
+                    } else {
+                        document.write(i + ' ');
+                        console.log(i);
+                    }
+                }
+            alert('You can see your result on console too')
+        </script>
+    </body>
+</html>
